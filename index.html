@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Frustum Calculator</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  	<div class="input-output">
+  		<div class="input">
+  			<table class="input table"> <!-- Get user input -->
+  				<tr>
+  					<th colspan="2">Inputs</th>
+  				</tr>
+  				<!-- <form name="inputs"> <!-- Form Start -->
+  					<tr>
+  						<td><label for="d1">D1 (top base)</label></td>
+  						<td>
+  							<input type="number" id="d1" name="d1" 	placeholder="Enter D1 value" required>
+  						</td>
+  					</tr>
+  					<tr>
+  						<td><label for="d2">D2 (bottom base)</label></td>
+  						<td>
+  							<input type="number" id="d2" name="d2" placeholder="Enter D2 value" required>
+  						</td>
+  					</tr>
+  					<tr>
+  						<td>
+  							<input type="radio" id="h" name="input-options" 		value	="h" required>
+  							<label for="h">h (height)</label>
+  							<input type="radio" id="L" name="input-options" value="L">
+  							<label for="L">L (phytagoras of h)</label>
+  						</td>
+  						<td>
+  							<input type="number" id="hl" name="hl" 	placeholder="Enter h/L value" required>
+  						</td>
+  					</tr>
+  					<tr> <!-- Calculate Frustrum -->
+  						<td colspan="2" class="btn">
+  							<input class="btn calculate" type="submit" value="Calculate"> <!-- Change to "Calculate & Visualize" -->
+  						</td>
+  					</tr>
+  				<!-- </form> <!-- Form end -->
+  				<tr>
+  					<td id="explanation" colspan="2">
+  						<a href="explanation.html">What are these values?</a>
+  					</td>
+  				</tr>
+  			</table>
+  			<div class="input visual"> <!-- Input Visualization -->
+  				<p>
+  					<!-- Visual Input Elements Here -->
+  				</p>
+  			</div>
+	  	</div>
+  		<div class="output">
+  			<table class="output table"> <!-- Outputs -->
+  				<tr>
+  					<th colspan="2">Outputs</th>
+  				</tr>
+  				<tr>
+  					<td>r1</td>
+  					<td id="r1"></td>
+  				</tr>
+  				<tr>
+  					<td>r2</td>
+  					<td id="r2"></td>
+  				</tr>
+  				<tr>
+  					<td>θ</td>
+  					<td id="angle"></td>
+  				</tr>
+  			</table>
+  			<div class="output visual"> <!-- Output Visualization -->
+  				<p>
+  					<!-- Visual Output Elements Here -->
+  				</p>
+  			</div>
+  		</div>
+  	</div>
+  	<div class="scripts">
+  		<script src="script.js"></script>
+  	</div>
+  </body>
+</html>
